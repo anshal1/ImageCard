@@ -1,0 +1,53 @@
+.main_navbar_container {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(87, 46, 104);
+  background-image: url("../../svg/wave.svg");
+  background-size: cover;
+  background-blend-mode: color-burn;
+}
+#nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 1em;
+}
+.brand_name {
+  color: white;
+  text-transform: uppercase;
+}
+.dropdown {
+  width: fit-content;
+}
+.cards_link {
+  width: fit-content;
+  padding: 0px 10px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.cards_link > p {
+  font-size: 1.3rem;
+  padding: 5px 15px;
+  background-color: rgba(106, 62, 124, 0.5);
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.active {
+  background-color: rgba(106, 62, 124, 1) !important;
+  box-shadow: 0px 0px 14px 2px rgba(255, 255, 255, 0.2);
+  color: rgb(233, 233, 233) !important;
+  text-shadow: 0px 0px 16px white;
+}
+.cards_link > p:hover {
+  background-color: rgba(106, 62, 124, 1);
+  box-shadow: 0px 0px 14px 5px rgba(255, 255, 255, 0.2);
+}

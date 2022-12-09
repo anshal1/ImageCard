@@ -1,0 +1,114 @@
+:root {
+  --dark_clr: rgb(23, 16, 23);
+  --light_clr: rgba(23, 16, 23, 0.5);
+}
+.main_card1_container {
+  width: 20rem;
+  height: 26rem;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(102, 51, 153, .2);
+  border-radius: 0.2em;
+  filter: brightness(60%);
+  transform: translateX(-500px) scale(0.3);
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  animation: animate 500ms 1 ease-in forwards;
+  animation-delay: calc(var(--delay) * .5s);
+}
+.text {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  bottom: 0px;
+  z-index: 2;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(70%);
+  transition: transform 500ms;
+  transition-delay: 500ms;
+}
+.heading {
+  align-self: flex-start;
+  color: white;
+}
+.heading > h2 {
+  text-shadow: 0px 0px 15px rgb(197, 197, 197);
+  position: relative;
+}
+.heading > h2::after {
+  content: "";
+  width: 110%;
+  position: absolute;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  bottom: -6px;
+  left: 0px;
+  transform: translateX(-10px);
+  transform: scale(0);
+  transition: transform 500ms;
+  transform-origin: left;
+}
+.para {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 500ms;
+  transition-delay: 1s;
+}
+.para > p {
+  font-size: 1.2rem;
+  text-align: start;
+  font-weight: 600;
+}
+.main_card1_container:hover .text,
+.main_card1_container:focus .text {
+  transform: translateY(0%);
+}
+.main_card1_container:hover .para,
+.main_card1_container:focus .para {
+  opacity: 1;
+}
+.main_card1_container:hover .heading > h2::after,
+.main_card1_container:focus .heading > h2::after {
+  transform: scale(1);
+}
+#card_holder {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 0px;
+  flex-wrap: wrap;
+}
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.4) translateX(-250px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05) translateX(0px);
+  }
+  71%{
+    opacity: 1;
+    transform: scale(1.07) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+    box-shadow: 0px 10px 12px rgba(221, 221, 221, .2);
+  }
+}
