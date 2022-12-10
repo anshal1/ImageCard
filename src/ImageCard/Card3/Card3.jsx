@@ -17,7 +17,6 @@ const Card3 = ({ IMG }) => {
                 key={image._id}
                 className="main_card3_container"
                 style={{
-                  backgroundImage: `url(${image?.image})`,
                   "--delay": `${index}`,
                   "--shadow": `${window.innerWidth}`,
                 }}
@@ -28,7 +27,10 @@ const Card3 = ({ IMG }) => {
                   }, 100);
                   setpreview(image.image);
                 }}
-              ></div>
+              >
+                <img src={image.image} alt="" />
+                <img src={image.image} alt="" />
+              </div>
             );
           })}
           <div
