@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './ImageCard/Navbar/Navbar';
 import Card2 from './ImageCard/Card2/Card2';
 import Card3 from './ImageCard/Card3/Card3';
+import Card4 from './ImageCard/Card4/Card4';
 
 function App() {
   const [Images, setImages] = useState([]);
@@ -38,7 +39,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Card1 IMG={Images ? Images : []} />} />
           <Route path="/Card2" element={<Card2 IMG={Images ? Images : []} />} />
-          <Route path='/Card3' element={<Card3 IMG={Images ? Images : []}/>} />
+          <Route path='/Card3' element={<Card3 IMG={Images ? Images : []} />} />
+          <Route path="/Card4" element={<Card4 IMG={Images ? Images : []} />} />
         </Routes>
       </Router>}
     </>
