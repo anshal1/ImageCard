@@ -14,7 +14,7 @@ const Navbar = () => {
               <p onClick={()=>{navi("/")}} className={`${location.pathname === "/" ? "active" : ""}`} >Card 1</p>
               <p onClick={()=>{navi("/Card2")}} className={`${location.pathname === "/Card2" ? "active" : ""}`}>Card 2</p>
               <p onClick={()=>{navi("/Card3")}} className={`${location.pathname === "/Card3" ? "active" : ""}`}>Card 3</p>
-              <p onClick={()=>{navi("/Card4")}} className={`${location.pathname === "/Card3" ? "active" : ""}`}>Card 4</p>
+              <p onClick={()=>{navi("/Card4")}} className={`${location.pathname === "/Card4" ? "active" : ""}`}>Card 4</p>
             </div>
           </div>
         </nav>
