@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 import "./Card4.css";
 const Card4 = ({ IMG }) => {
   const previewImageLoad = (image, string_after) => {
@@ -8,7 +7,7 @@ const Card4 = ({ IMG }) => {
     for (let i = 0; i < SplitText.length; i++) {
       if (SplitText[i] === string_after) {
         newText += `${SplitText[i]}/c_scale,w_150/`;
-      } else if (SplitText[i] == "undefined") {
+      } else if (SplitText[i] === "undefined") {
         newText += "";
       } else if (i === SplitText.length - 1) {
         newText += SplitText[i];
