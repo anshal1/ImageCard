@@ -29,7 +29,7 @@ const Card4 = ({ IMG }) => {
     });
   };
   const Show = (e) => {
-    e.target.classList = "hide-first animate";
+    e.target.classList = "hide-first animate-card4";
   };
   const Hide = (e) => {
     e.target.classList = "hide-first";
