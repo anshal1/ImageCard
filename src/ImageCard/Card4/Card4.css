@@ -1,0 +1,8 @@
+.main-card4-container {
+  width: 20rem;
+  height: 26rem;
+  background: var(--image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
