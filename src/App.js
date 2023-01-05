@@ -12,7 +12,7 @@ function App() {
   const [Images, setImages] = useState([]);
   const [loading, setloading] = useState(true);
   const FetchImage = async () => {
-    let url = "https://shareimage-app.onrender.com/all/image?page=1&limit=3";
+    let url = "https://shareimage-app.onrender.com/all/image?page=1&limit=10";
     let data = await fetch(url, {
       method: "POST",
       headers: {
